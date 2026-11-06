@@ -1,6 +1,4 @@
 import type {Funkcionar,Igralec} from "./Oseba";
-import React from "react";
-import { useState } from "react";
 
 export class Ekipa {
     ime: string ;
@@ -25,6 +23,7 @@ export class Ekipa {
 
     dodajIgralca(igralec: Igralec): void{
         // this.igralci.push(igralec);
+        this.igralci = [...this.igralci, igralec]
 
     }
 

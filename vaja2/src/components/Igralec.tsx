@@ -1,25 +1,25 @@
-import React, { useContext } from "react";
-import type { Ekipa } from "../models/Ekipa";
-import {useEkipa} from "./Telo";
+// import React, { useContext } from "react";
+// import type { Ekipa } from "../models/Ekipa";
+// import {useEkipa} from "./Telo";
+import type { Igralec } from "../models/Oseba";
 
-// interface ekipaProps{
-//     ekipa: Ekipa
-// }
-function Igralec(){
-    const ekipa = useEkipa();
+interface igralecProps{
+    igralec: Igralec
+}
 
-    const igralci = ekipa.igralci.map(
-        // i=>
-        // <li key={i}>{i}</li>
-        )
+export function Igralec(igralec : igralecProps){
+    // const ekipa = useEkipa();
+
+ 
     
 
     return(
-        <div>
-            <h1>{ekipa.letoUstanovitve}</h1>
-            <p>TELO</p>
-        </div>
+        <ul>
+            <li>    
+                [{igralec.igralec.id}] {igralec.igralec.ime} {igralec.igralec.priimek}, {igralec.igralec.visina} cm, {igralec.igralec.teza} kg, poškodovan: {igralec.igralec.poskodovan ? "da" : "ne"}
+            </li>
+        </ul>
     )
 }
 
-export default Igralec;
+// export default Igralec;
