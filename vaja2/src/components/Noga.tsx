@@ -11,7 +11,7 @@ export function Noga(){
     
 
     return(
-        <div>
+        <div className="noga">
             <p>
                 Žan Čahuk, IPT 2.letnik, OORSR
             </p>

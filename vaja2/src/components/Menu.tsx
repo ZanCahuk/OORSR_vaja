@@ -9,7 +9,7 @@ interface ekipaProps{
 function Menu({ekipa} : ekipaProps){
 
     return(
-        <div>
+        <div className="menu">
             <h1>
                 {ekipa.ime}
             </h1>

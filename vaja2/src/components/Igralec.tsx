@@ -14,11 +14,11 @@ export function Igralec(igralec : igralecProps){
     
 
     return(
-        <ul>
-            <li>    
-                [{igralec.igralec.id}] {igralec.igralec.ime} {igralec.igralec.priimek}, {igralec.igralec.visina} cm, {igralec.igralec.teza} kg, poškodovan: {igralec.igralec.poskodovan ? "da" : "ne"}
-            </li>
-        </ul>
+        
+        <li className="igralec">    
+            [{igralec.igralec.id}] {igralec.igralec.ime} {igralec.igralec.priimek}, {igralec.igralec.visina} cm, {igralec.igralec.teza} kg, poškodovan: {igralec.igralec.poskodovan ? "da" : "ne"}
+        </li>
+        
     )
 }
 

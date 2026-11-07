@@ -21,14 +21,17 @@ export function Telo({ekipa}:ekipaProps ){
 
     return(
         <context.Provider value={ekipa} >
-            <div>
+            <div className="telo">
                 <h2>Leto ustvarjave: {ekipa.letoUstanovitve}</h2>
                 <h3>Diraktor: {ekipa.direktor.ime} {ekipa.direktor.priimek}</h3>
                 <h3>Trener: {ekipa.trener.ime} {ekipa.trener.priimek}</h3>
             </div>
-
-            {igralciDol}
+            <ul className="igralci">
+                {igralciDol}
+            </ul>
             {igralciDol.length < 11 ? <Opozorilo dol={igralciDol.length} /> : <Info dol={igralciDol.length} /> }
+            
+            
             {/* {igralciDol.length < 11 && <Opozorilo dol={igralciDol.length} /> }
             {igralciDol.length > 11 && <Info dol={igralciDol.length} /> } */}
 
