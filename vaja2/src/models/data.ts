@@ -33,6 +33,15 @@ const igralec3: Igralec = {
 ekipa.dodajIgralca(igralec1);
 ekipa.dodajIgralca(igralec2);
 ekipa.dodajIgralca(igralec3);
+ekipa.dodajIgralca(igralec1);
+ekipa.dodajIgralca(igralec2);
+ekipa.dodajIgralca(igralec3);
+ekipa.dodajIgralca(igralec1);
+ekipa.dodajIgralca(igralec2);
+ekipa.dodajIgralca(igralec3);
+ekipa.dodajIgralca(igralec1);
+ekipa.dodajIgralca(igralec2);
+ekipa.dodajIgralca(igralec3);
 
 
 // ekipa.posodobiIgralca({ ...igralec2, teza: 86, poskodovan: false }, 11);
